@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольний менеджер</title>
+    <style>
+        /* 1. Обмежуємо ширину всього сайту, щоб він не розповзався */
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        /* 2. ПРИБИРАЄМО ВІДСТАНЬ МІЖ КАРТИНКОЮ ТА ТЕКСТОМ */
+        .main-picture img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 0; /* Обнуляємо відступ знизу у картинки */
+        }
+
+        h1 {
+            margin-top: 10px; /* Мінімальний відступ зверху у заголовка */
+            font-size: 24px;
+        }
+
+        /* Стилі для лого та шапки */
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+        .logo img { width: 80px; height: auto; }
+        .menu ul { list-style: none; padding: 0; }
+        .menu a { text-decoration: none; color: blue; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <p>Футбольний <b>Менеджер</b> <i>Офіційний сайт</i></p>
+                    <picture>
+                        <source srcset="img/ball.webp" type="image/webp">
+                        <img src="img/ball.png" alt="логотип">
+                    </picture>
+                </div>
+                <div class="contacts">
+                    <p><a href="tel:+380975555501">+38 (097) 555-55-01</a> <i>| Працюємо 24/7</i></p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <picture class="main-picture">
+                <source srcset="img/picture.webp" type="image/webp">
+                <img src="img/picture.jpg" alt="ворота">
+            </picture>
+
+            <div class="main">
+                <section class="main-text">
+                    <h1>Про футбол</h1>
+                    <p>Командний вид спорту...</p>
+                    <p>У футбол грають на прямокутному полі...</p>
+                </section>
+
+                <aside class="menu">
+                    <p><b>Футбольні партнери</b></p>
+                    <nav>
+                        <ul>
+                            <li><a href="#">ОСТАННІ НОВИНИ</a></li>
+                            <li><a href="#">ПАРІ МАТЧ</a></li>
+                            <li><a href="#">ПРИВАТНИЙ МЕНЕДЖЕР Арсен</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </main>
+
+        <footer>
+            <p class="footer">© Футбольний менеджер 2026.</p>
+        </footer>
+    </div>
+</body>
+</html>
