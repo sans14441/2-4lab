@@ -1,13 +1,13 @@
-// Код для обробки натискання кнопки
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Зупиняє перезавантаження сторінки
     
-    // --- ТУТ МОЖНА ЗМІНИТИ ПОВІДОМЛЕННЯ ---
+
     alert('Дякуємо! Ваше повідомлення надіслано.');
     this.reset(); // Очищує форму
 });
 
-// Адаптивне меню (якщо захочеш додати "бургер-меню" пізніше)
+
 console.log("Сайт завантажено та готовий до роботи!");
 let orderCount = localStorage.getItem('shaurmaCount') || 0;
 
